@@ -1,0 +1,37 @@
+📁 DevDaily Folder Structure
+pgsql
+Copy
+Edit
+DevDaily/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/              # Icons, images, fonts
+│   ├── components/          # Reusable UI components
+│   │   ├── Header.tsx
+│   │   ├── LogForm.tsx
+│   │   ├── LogItem.tsx
+│   │   ├── TagSelector.tsx
+│   │   └── StatsCard.tsx
+│   ├── features/            # Business logic grouped by feature
+│   │   └── logs/
+│   │       ├── logsSlice.ts # (if using Redux or Zustand)
+│   │       ├── useLogs.ts   # Custom hook for log state (LocalStorage version)
+│   │       └── types.ts     # Log types and interfaces
+│   ├── pages/               # Page-level components
+│   │   ├── Home.tsx
+│   │   ├── History.tsx
+│   │   └── Export.tsx
+│   ├── utils/               # Utility functions
+│   │   ├── storage.ts       # getLogs, saveLogs, etc.
+│   │   └── dateUtils.ts     # formatDate, getStreak, etc.
+│   ├── styles/              # Global styles (if not using Tailwind)
+│   │   └── main.css
+│   ├── App.tsx              # Main app wrapper
+│   ├── main.tsx             # Entry point
+│   └── types.d.ts           # Global types
+├── .gitignore
+├── index.html
+├── package.json
+├── tsconfig.json
+└── README.md

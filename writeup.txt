@@ -1,0 +1,99 @@
+✅ DevDaily – Developer Learning Tracker
+💡 Core Problem:
+Developers often finish a day feeling like they didn’t achieve anything — even if they did. DevDaily helps track learning and progress to fight that feeling.
+
+🔑 Key Features
+1. Daily Log
+Simple input form:
+
+What did you learn? (textarea)
+
+Tags: (multi-select: frontend, backend, tooling, bugfix, refactor, etc)
+
+Date: default to today
+
+Save logs in:
+
+LocalStorage (MVP)
+
+Optional upgrade: Firebase Auth + Firestore (for sync across devices)
+
+2. Progress & Streaks
+Show:
+
+Streak counter (how many days in a row you've logged)
+
+Total entries
+
+Breakdown by tags (Pie/Bar chart – use chart.js or recharts)
+
+3. Dev Diary Export
+Export all logs as a .txt or .md file:
+
+markdown
+Copy
+Edit
+## August 3, 2025
+- Learned about useMemo in React.
+- Fixed a bug with my login modal.
+Tags: frontend, bugfix
+
+## August 2, 2025
+- Read about Docker volumes.
+Tags: backend, devops
+4. Optional Add-ons
+Reminders: “Did you log what you learned today?”
+
+Dark mode
+
+Search by keyword or tag
+
+Monthly summaries
+
+Share a day to Twitter/LinkedIn (e.g., "Today I learned... #DevDaily")
+
+🛠 Tech Stack
+MVP:
+Frontend: React + TailwindCSS or Material UI
+
+Storage: LocalStorage (easy, fast)
+
+Charting: Recharts or Chart.js
+
+Stretch:
+Backend: Firebase (Auth + Firestore)
+
+Notifications: Browser Notifications or Email (via Firebase functions)
+
+📱 UI Sketch (basic wireframe)
+sql
+Copy
+Edit
++------------------------------+
+| 👋 Welcome, Nathan           |
+| 🔥 5-Day Streak | 📅 Log     |
++------------------------------+
+
+[ Add New Entry ]
+[----------------------------]
+| What did you learn today?  |
+| [    useRef in React    ]  |
+[----------------------------]
+[Tags: [x]frontend [ ]bugfix]
+[ Save Entry ]
+
++-----------------------------+
+| 🗓 Log History              |
+| - Aug 3: useRef, frontend  |
+| - Aug 2: Docker, devops    |
+| ...                         |
++-----------------------------+
+
+[ Export as .txt ]
+🔜 Future Ideas
+AI-generated summary of monthly logs
+
+Markdown editor with syntax highlighting
+
+GitHub integration (autofill log from commits?)
+
