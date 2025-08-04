@@ -19,7 +19,7 @@ export default function TagSelector({ selectedTags, onToggle }: TagSelectorProps
               ? 'bg-blue-600 text-white'
               : 'bg-gray-200 text-gray-800'
           }`}
-        >
+        > 
           {tag}
         </button>
       ))}
