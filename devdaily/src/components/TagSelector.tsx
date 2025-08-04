@@ -23,6 +23,6 @@ export default function TagSelector({ selectedTags, onToggle }: TagSelectorProps
           {tag}
         </button>
       ))}
-    </div>
+    </div> 
   );
 }
