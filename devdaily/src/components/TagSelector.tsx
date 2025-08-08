@@ -20,7 +20,7 @@ export default function TagSelector({ selectedTags, onToggle }: TagSelectorProps
               : 'bg-gray-200 text-gray-800'
           }`}
         > 
-          {tag}
+          {tag} 1
         </button>
       ))}
     </div> 
